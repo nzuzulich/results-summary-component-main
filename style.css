@@ -1,0 +1,267 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #fff;
+    font-family: 'Hanken Grotesk', sans-serif;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedor {
+    display: flex;
+    flex-direction: row;
+    max-width: 500px;
+    max-height: 350px;
+    background: #fff;
+    box-shadow: 11px 16px 27px -11px hsla(241,100%,89%,50%);
+    border-radius: 25px;
+    
+
+}
+/* Estilos de la sección resultados */
+
+.resultado {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 25px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.resultado h1 {
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    margin-bottom: 30px;
+}
+
+.redondel {
+    height: 130px;
+    width: 130px;
+    background: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+    border-radius: 50%;
+    color: hsl(241, 100%, 89%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.redondel p {
+    font-size: 12px;
+    font-weight: 200;
+    display: flex;
+}
+
+.score {
+    color: #fff;
+    font-size: 50px;
+    line-height: 60px;
+}
+
+.resultado h3 {
+    color: #fff;
+    font-size: 22px;
+    line-height: 300%;
+    font-weight: 500;
+
+}
+
+.resultado p {
+    color: hsl(241, 100%, 89%);
+    font-size: 13px;
+    margin: 0 30px;
+    font-weight: 400;
+}
+
+
+
+
+/* Estilos de la sección sumario */
+
+.sumario {
+    width: 50%;
+    position: relative;
+
+}
+
+.sumario ul {
+    list-style: none;
+    margin: 25px;
+    font-size: 12px;
+}
+
+.sumario ul li {
+    padding: 5px 20px;
+    height: 35px;
+    margin: 10px 0;
+    line-height: 25px;
+    border-radius: 10px;
+}
+
+.sumario ul li .numeros {
+    float: right;
+    font-weight: 700;
+    color: hsl(224, 30%, 27%);
+}
+
+.sumario ul li .numerosgris {
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+.icon {
+    height: 15px;
+    width: 15px;
+    display: inline-block;
+    margin: 5px 5px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+.memory-icon {
+    background-image: url(assets/images/icon-memory.svg);
+}
+
+.visual-icon {
+    background-image: url(assets/images/icon-visual.svg);
+}
+
+.verbal-icon {
+    background-image: url(assets/images/icon-verbal.svg);
+}
+
+.reaction-icon {
+    background-image: url(assets/images/icon-reaction.svg);
+}
+
+.titulo {
+    line-height: 35px;
+    display: inline-block;
+    position: relative;
+    top: -8px;
+}
+
+div ul li.reaction {
+    color:hsl(0, 100%, 67%);
+    background-color: hsla(0, 100%, 67%, 0.05) ;
+}
+
+div ul li.memory {
+    color:hsl(39, 100%, 56%);
+    background-color: hsla(39, 100%, 56%, 0.05) ;
+}
+
+div ul li.verbal {
+    color:hsl(166, 100%, 37%);
+    background-color: hsla(166, 100%, 37%, 0.05) ;
+}
+
+div ul li.visual {
+    color:hsl(234, 85%, 45%);
+    background-color: hsla(234, 85%, 45%, 0.05) ;
+}
+
+.sumario ul li.boton {
+    width: 100%;
+    padding: 0;
+    margin-top: 30px;
+}
+
+.sumario ul li button {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    background: hsl(224, 30%, 27%);
+    font-family:  'Hanken Grotesk', sans-serif;;
+}
+
+.sumario ul li button:hover {
+    background: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    cursor: pointer;
+}
+
+.sumario ul li.sumarioli {
+    padding: 0;
+    font-size: 14px;
+}
+
+/* Estilos del footer */
+
+footer {
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding: 20px;
+    font-size: 12px;
+    color: hsla(224, 30%, 27%, 0.5);
+}
+
+footer a {
+    text-decoration: none;
+    color:  hsla(224, 30%, 27%, 1);
+}
+
+/* Estilos responsive */
+
+@media screen and (max-width: 450px) {
+    .contenedor {
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      justify-content: center;
+      margin-bottom: 100px;
+    }
+    .resultado {
+        width: 100%;
+        padding: 50px 0 10px 0;
+    }
+
+    .resultado h1 {
+        margin-bottom: 0;
+    }
+    .resultado h3 {
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .resultado .redondel {
+        transform: scale(0.8);
+        margin-bottom: 0;
+    }
+
+    .sumario {
+        width: 100%;
+        border-radius: 0px 0px 25px 25px;
+        padding-bottom: 20px;
+    }
+
+    .sumario ul {
+        padding: 0;
+        margin: 0 25px;
+    }
+
+    footer {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        transform: scale(0.8);
+        padding: 10px;
+    }
+}
