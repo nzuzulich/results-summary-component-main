@@ -204,7 +204,7 @@ div ul li.visual {
 /* Estilos del footer */
 
 footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     text-align: center;
     padding: 20px;
@@ -257,7 +257,7 @@ footer a {
     }
 
     footer {
-        position: absolute;
+        position: fixed;
         bottom: 0;
         transform: scale(0.8);
         padding: 10px;
