@@ -17,8 +17,8 @@ body {
 .contenedor {
     display: flex;
     flex-direction: row;
-    max-width: 500px;
-    max-height: 350px;
+    width: 500px;
+    height: 350px;
     background: #fff;
     box-shadow: 11px 16px 27px -11px hsla(241,100%,89%,50%);
     border-radius: 25px;
